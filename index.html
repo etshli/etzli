@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- תגיות SEO ומידע -->
+    <title>עץלי - אפליקציית הרוויה החכמה שלך</title>
+    <meta name="description" content="עץלי היא לא עוד אפליקציית מים. גדלו עץ וירטואלי, נתחו ארוחות ומשקאות בעזרת בינה מלאכותית (AI) וקבלו יעדים המותאמים למזג האוויר. אפליקציה חינמית, ללא פרסומות, המותאמת גם למוח נוירו-מגוון (ADHD).">
+    <meta name="keywords" content="אפליקציית מים, תזכורת לשתות, רוויה, ADHD, בינה מלאכותית, אפליקציית בריאות, מעקב שתייה">
+    <meta name="theme-color" content="#06b6d4">
+    
+    <!-- RealFaviconGenerator Icons -->
+    <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="etzli" />
+    <link rel="manifest" href="../site.webmanifest" />
+    
+    <!-- Tailwind CSS (לעיצוב מהיר של מבנה האתר) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- אייקונים מ-FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- קישור לקובץ העיצוב שלנו -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden">
+
+    <!-- ניווט עליון -->
+    <nav class="bg-white shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black text-cyan-500 flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-green-500"></i> עץלי
+                <span class="beta-badge bg-cyan-100 text-cyan-800 text-xs px-2 py-1 rounded-full">Beta</span>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="../vision/vision.html" class="text-gray-600 hover:text-cyan-500 font-bold transition hidden sm:block">
+                    החזון שלי
+                </a>
+                <a href="#download" class="bg-gray-200 text-gray-500 font-bold py-2 px-6 rounded-full transition cursor-not-allowed">
+                    בטא (בקרוב)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- אזור ראשי (Hero) -->
+    <section class="gradient-bg pt-32 pb-20 px-6 min-h-screen flex items-center">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            
+            <!-- טקסט -->
+            <div class="md:w-1/2 text-center md:text-right mb-12 md:mb-0">
+                <div class="inline-block bg-orange-100 text-orange-600 px-4 py-1 rounded-full font-bold text-sm mb-6 border border-orange-200">
+                    <i class="fa-solid fa-person-digging ml-1"></i> האפליקציה כרגע בהכנות אחרונות
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-black text-gray-900 leading-tight mb-6">
+                    החבר הווירטואלי שדואג <span class="text-cyan-500">לבריאות שלך</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8">
+                    עץלי היא לא עוד אפליקציית מים. לגדל עץ אלון, לנתח ארוחות עם בינה מלאכותית, ולקבל יעדים המותאמים אישית למזג האוויר שלך.
+                </p>
+                
+                <!-- כפתור "בקרוב" -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <div class="bg-gray-800 text-gray-300 px-8 py-4 rounded-xl flex items-center justify-center gap-3 shadow-lg border border-gray-700 cursor-not-allowed opacity-90">
+                        <i class="fa-solid fa-hourglass-half text-2xl text-yellow-500"></i>
+                        <div class="text-right">
+                            <div class="text-xs">גרסת הבטא עדיין בהכנות...</div>
+                            <div class="font-bold text-lg">טופס ההרשמה ייפתח בקרוב!</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-sm text-gray-500">
+                    * מיועד למכשירי אנדרואיד. עקבו אחרי העדכונים!
+                </p>
+            </div>
+
+            <!-- תמונת אפליקציה -->
+            <div class="md:w-1/2 flex justify-center relative float-anim">
+                <div class="w-64 h-[500px] bg-white rounded-[40px] shadow-2xl border-8 border-gray-900 overflow-hidden relative flex flex-col items-center justify-center text-center p-0">
+                    <img src="../assets/screenshot.png" alt="צילום מסך של אפליקציית עץלי" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- אזור פיצ'רים -->
+    <section class="py-20 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black mb-16 text-gray-800">למה כדאי לנסות את עץלי?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="feature-card bg-cyan-50 p-6 rounded-2xl">
+                    <div class="feature-icon bg-cyan-100 text-cyan-500 w-12 h-12 flex items-center justify-center rounded-full mx-auto mb-4 text-xl"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                    <h3 class="text-xl font-bold mb-3">מזג אוויר חכם</h3>
+                    <p class="text-gray-600 text-sm">יעד השתייה משתנה אוטומטית לפי הטמפרטורה, הלחות והגשם במיקום שלך.</p>
+                </div>
+                <div class="feature-card ai-gradient p-6 rounded-2xl bg-purple-50">
+                    <div class="feature-icon bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-full mx-auto mb-4 text-xl"><i class="fa-solid fa-robot"></i></div>
+                    <h3 class="text-xl font-bold mb-3">הזנה חכמה (AI)</h3>
+                    <p class="text-gray-600 text-sm">ה-AI יחשב במדויק כמה נוזלים קיבלת מהארוחה (כולל התחשבות במלחים!).</p>
+                </div>
+                <div class="feature-card bg-teal-50 p-6 rounded-2xl">
+                    <div class="feature-icon bg-teal-100 text-teal-600 w-12 h-12 flex items-center justify-center rounded-full mx-auto mb-4 text-xl"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3 class="text-xl font-bold mb-3">מרפאת AI</h3>
+                    <p class="text-gray-600 text-sm">צלם את הלשון, גב היד, או צבע השתן, והבינה המלאכותית שלנו תעריך את רמת ההתייבשות שלך.</p>
+                </div>
+                <div class="feature-card bg-green-50 p-6 rounded-2xl">
+                    <div class="feature-icon bg-green-100 text-green-500 w-12 h-12 flex items-center justify-center rounded-full mx-auto mb-4 text-xl"><i class="fa-solid fa-tree"></i></div>
+                    <h3 class="text-xl font-bold mb-3">העץ שלך גדל</h3>
+                    <p class="text-gray-600 text-sm">עמוד ביעדים והעץ יצמח. אבל היזהר: חוסר במים ייבש אותו, ויותר מדי מים יגרמו לו לטבוע (הרעלת מים)!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- אזור שאלות נפוצות (FAQ) -->
+    <section class="py-20 bg-gray-50 border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-black mb-2 text-center text-gray-800">שאלות נפוצות</h2>
+            <p class="text-center text-gray-500 mb-12">כל מה שרציתם לדעת על גרסת הבטא של עץלי</p>
+            
+            <div class="space-y-6">
+                <!-- שאלה 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-green-500"></i>
+                        איך תעבוד ההורדה כשהבטא תיפתח? האם זה בטוח?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        'עץלי' נמצאת כרגע בגרסת בטא (פיתוח מתקדם). אנחנו רוצים לוודא שהאפליקציה מושלמת לפני שנעלה אותה רשמית ל-Google Play. בקרוב נפתח טופס הרשמה, ומי שיאשר את תנאי הבטא יקבל קישור לקובץ התקנה ישיר (APK). הקובץ בטוח לחלוטין – תוכלו אפילו להעביר אותו סריקה באתר VirusTotal כדי להיות רגועים במאה אחוז.
+                    </p>
+                </div>
+                <!-- שאלה 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-user-lock text-purple-500"></i>
+                        האפליקציה מבקשת לצלם לשון או שתן. איפה זה נשמר?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        הפרטיות שלכם היא מעל הכל! כל התמונות שאתם מצלמים במרפאת ה-AI נשלחות ישירות דרך מפתח ה-API הפרטי שלכם אל גוגל. הן לא עוברות דרך השרתים שלנו, לא עולות לענן ציבורי, ונשמרות אך ורק בתוך המכשיר שלכם.
+                    </p>
+                </div>
+                <!-- שאלה 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-flask text-cyan-500"></i>
+                        איך האפליקציה מחשבת נוזלים? (אלגוריתם מול AI)
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        האפליקציה עובדת בשני מישורים: הראשון הוא <b>אלגוריתם מובנה (חינמי לחלוטין וללא צורך באינטרנט)</b>, המכיל מאגר מדעי של מקדמי ספיגה למשקאות נפוצים (קפה, תה, אלכוהול וכו'). השני הוא <b>מרפאת ה-AI</b> המתקדמת – שבה ניתן לצלם מאכלים או משקאות מורכבים, והבינה המלאכותית תחשב עבורכם את תרומת הנוזלים נטו.
+                    </p>
+                </div>
+                <!-- שאלה 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-coins text-yellow-500"></i>
+                        האם חובה להשתמש במפתח API של Gemini, והאם זה עולה כסף?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        לא חובה בכלל! האפליקציה מתפקדת נהדר עם האלגוריתם המובנה שלה ללא צורך במפתח. עם זאת, אם תרצו להשתמש בפיצ'רים החכמים (זיהוי תמונה), תוכלו לחבר מפתח אישי בחינם. לגוגל יש מסלול חינמי נדיב, כך ששימוש סביר לא יעלה לכם אגורה.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- קריאה לפעולה תחתית (בקרוב) -->
+    <section id="download" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <i class="fa-brands fa-android text-5xl text-gray-500 mb-4"></i>
+            <h2 class="text-3xl font-black mb-6">עזרו לנו לשפר את עץלי!</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                האפליקציה כרגע נמצאת בשלבי הכנה אחרונים לפני השקת הבטא. בקרוב נפתח את האפשרות למלא טופס הרשמה ולהיות הראשונים שמגדלים את העץ הווירטואלי שלהם לפני ההשקה הרשמית ב-Google Play.
+            </p>
+            <div class="inline-block bg-gray-700 text-gray-400 font-bold py-3 px-10 rounded-full text-lg border border-gray-600 cursor-not-allowed">
+                טופס ההרשמה ייפתח ממש בקרוב...
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 py-6 text-center text-gray-500 text-sm">
+        <p>© <span id="currentYear"></span> עץלי (Etzli). כל הזכויות שמורות. בפיתוח לאנדרואיד.</p>
+    </footer>
+
+    <!-- קישור לקובץ ה-JavaScript שלנו -->
+    <script src="../script.js"></script>
+</body>
+</html>
